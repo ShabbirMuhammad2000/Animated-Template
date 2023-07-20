@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <title>Animated Template</title>
+    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script defer src="script.js"></script>
+    <script defer src="navbar.js"></script>
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="favicon.png">
     <!-- Font Awesome --> 
@@ -81,10 +84,10 @@
         <div class="items-center flex flex-wrap">
           <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
             <div class="pr-12">
-              <h1 class="text-white font-semibold text-5xl" data-aos="fade-up">
+              <h1 class="text-white font-semibold text-5xl" >
                 Welcome your epiphany.
               </h1>
-              <p class="mt-4 text-lg text-gray-300" data-aos="fade-right" data-aos-delay="600">
+              <p class="mt-4 text-lg text-gray-300" >
                 Lorem ipsum dolor sit. Eum totam aspernatur aliquam praesentium aperiam magni, dignissimos, atque incidunt fuga nulla distinctio eligendi enim placeat nesciunt, soluta maxime nihil ipsa minus!
               </p>
             </div>
@@ -740,25 +743,10 @@
     </div>
   </footer>
   <!-- End of Footer Section -->
+  <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+  <!-- <script defer src="script.js"></script> -->
+  <!-- Navigation Script -->
+  <!-- <script defer src="navbar.js"></script> -->
 </body>
-<!-- AOS.js -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init({
-  offset: 200, // offset (in px) from the original trigger point
-  delay: 300, // values from 0 to 3000, with step 50ms
-  duration: 400, // values from 0 to 3000, with step 50ms
-  easing: 'ease', // default easing for AOS animations
-  once: false, // whether animation should happen only once - while scrolling down
-  mirror: false, // whether elements should animate out while scrolling past them
-  })
-</script>
-<!-- Navigation Script -->
-<script>
-  function toggleNavbar(collapseID) {
-
-    document.getElementById(collapseID).classList.toggle("hidden");
-    document.getElementById(collapseID).classList.toggle("block");
-  }
-</script>
 </html>
+
